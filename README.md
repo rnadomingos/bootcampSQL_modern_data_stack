@@ -1,1 +1,2 @@
-# bootcampSQL_modern_data_stack
+# Bootcamp SQL Modern Data Stack
+
