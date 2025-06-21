@@ -3,10 +3,10 @@ from airflow.decorators import dag, task
 from datetime import datetime
 
 @dag(
-        dag_id="My first DAG",
+        dag_id="My_first_DAG",
         description="First DAG with air flow",
         schedule="40 9 * * *",
-        start_date=datetime(2024,6,21),
+        start_date=datetime(2024,6,20),
         catchup=False #backfill
 )
 def pipeline():
@@ -29,5 +29,7 @@ def pipeline():
     t1 = primeira_atividade()
     t2 = segunda_atividade()
     t3 = terceira_atividade()
+
+    t1 >> t2 >> t3
 
 pipeline()    
