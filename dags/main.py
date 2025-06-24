@@ -33,3 +33,5 @@ def pipeline():
     t1 >> t2 >> t3
 
 pipeline()    
+
+# aula hora 1 -minuto 22
